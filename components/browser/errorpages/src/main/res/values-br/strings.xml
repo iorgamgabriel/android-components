@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources xmlns:tools="http://schemas.android.com/tools" xmlns:moz="http://mozac.org/tools">
 
     <!-- The button that appears at the bottom of an error page. -->
     <string name="mozac_browser_errorpages_page_refresh">Klask en-dro</string>
@@ -44,6 +44,17 @@
     <string name="mozac_browser_errorpages_security_bad_cert_back">Distreiñ (Erbedet)</string>
     <!-- The text shown inside the advanced options button used to bypass the invalid SSL certificate. It's only shown if the user has expanded the advanced options. -->
     <string name="mozac_browser_errorpages_security_bad_cert_accept_temporary">Asantiñ ar riskl ha kendercʼhel</string>
+
+    <!-- The document title and heading of the error page shown when a website uses HSTS. -->
+    <string name="mozac_browser_errorpages_security_bad_hsts_cert_title">Ur c’hennask diogel a zo goulennet evit al lec’hienn-mañ.</string>
+    <!-- The error message shown when a website uses HSTS. -->
+    <string name="mozac_browser_errorpages_security_bad_hsts_cert_message"><![CDATA[
+ <ul>
+ <li>N’haller ket skrammañ ar bajenn a glaskit gwelet dre ma vez goulennet ur c’hennask diogel gant al lec’hienn.</li>
+ <li>Ar gudenn a zo gant al lec’hienn moarvat, ha n’eus netra a c’hallit ober.</li>
+ <li>Gallout a rit kemenn ardoer al lec’hienn ez eus ur gudenn.</li>
+ </ul>
+]]></string>
 
     <!-- The document title and heading of the error page shown when the user's network connection is interrupted while connecting to a website. -->
     <string name="mozac_browser_errorpages_net_interrupt_title">Harzet eo bet treuzkas ar roadennoù</string>
@@ -293,4 +304,11 @@
     <string name="mozac_browser_errorpages_safe_phishing_uri_message"><![CDATA[
       <p>Al lecʼhienn e %1$s zo bet marilhet evel ul lecʼhienn douellus ha harzet eo bet gant ho kwellvezioù diogelroez.</p>
     ]]></string>
+
+    <!-- The title of the error page for websites that do not support HTTPS when HTTPS-Only is turned on -->
+    <string name="mozac_browser_errorpages_httpsonly_title">Lec’hienn diogel dihegerz</string>
+    <!-- The text of the error page for websites that do not support HTTPS when HTTPS-Only is turned on. %1$s will be replaced with the URL of the website. -->
+    <string name="mozac_browser_errorpages_httpsonly_message"><![CDATA[Gweredekaet ho peus ar mod HTTPS-hepken evit muioc’h a ziogelroez, ha n’eus ket a stumm HTTPS eus <em>%1$s</em> .]]></string>
+    <!-- Button on error page for websites that do not support HTTPS when HTTPS-Only is turned on. Clicking the button allows the user to nevertheless load the website using HTTP. -->
+    <string name="mozac_browser_errorpages_httpsonly_button">Kenderc’hel etrezek al lec’hienn HTTP</string>
 </resources>
